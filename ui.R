@@ -20,9 +20,10 @@ shinyUI(
       h6("The midparent's height is an average of the fathers height and 1.08 times the mother's. 
           In the data there are 205 different parents and 928 children. The data here is truncated at 
           the ends for both parents and children so that it can be treated as numeric data. The data 
-          were tabulated and consequently made discrete. The father.son data set is similar data used 
-          by Galton and is continuous. The variables are: child selects The child's height and parent 
-          selects The “midparent” height. Below you can select the variable to show in the histogram."),
+          were tabulated and consequently made discrete. Below you can select the variable to show in the histogram.
+         If you select the radiobutton child, the histogram shows the height the child and the frequency. Case you select
+         the radiobutton parent, the histograms shows the midparent's height and the frequency. You can slide the values of mean
+         and in this case it is showed the mu selected and the MSE respective."),
       radioButtons("variable", "Variable:",
                          c("child" = "child",
                            "parent" = "parent")),
